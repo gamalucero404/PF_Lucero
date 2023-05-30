@@ -1,4 +1,13 @@
 $colorprincipal: #252525;
+@keyframes movimiento {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-2rem);}
+    100%{transform: translateY(0);}
+}
+@mixin esp_prop($margin, $border-radius){
+    margin: $margin;
+    border-radius: $border-radius;
+}
 
 *{
     margin: 0;
@@ -39,6 +48,8 @@ body{
     }
 }
 
+/*Inicio*/
+
 .inicio{
     display: flex;
     flex-direction: column;
@@ -49,8 +60,13 @@ body{
  img{
     width: 250px;
     border-radius: 150px;
-    background-color: whitesmoke;
+    background-image: radial-gradient(ellipse 150px 120px,ghostwhite, $colorprincipal);
     padding: 0.5rem;
+
+    animation-name: movimiento;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
 }
 }
 
@@ -64,8 +80,6 @@ h1{
     text-align: center;
     margin: 4rem;
 }
-
-/*Inicio*/
 
 .container_card{
     display: flex;
@@ -108,8 +122,9 @@ h1{
     }
     img{
         width: 250px;
-        margin: 2rem;
-        border-radius: 150px;
+        @include esp_prop(2rem, 150px);
+        padding: 0.5rem;
+        background-image: radial-gradient(ellipse 150px 120px,whitesmoke, $colorprincipal);
     }
 }
 
@@ -198,14 +213,12 @@ form{
     }
     textarea{
         display: block;
-        margin: auto;
-        border-radius: 20px;
+        @include esp_prop(auto, 20px);
         max-height: 10rem;
         min-height: 2rem;
     }
     input{
-        margin: 1.5rem;
-        border-radius: 20px;
+        @include esp_prop(1.5rem, 20px);
         padding: 0.5rem;
     }
 }
