@@ -1,4 +1,6 @@
-$colorprincipal: #252525;
+ @import "variables.scss";
+ @import "nav";
+
 @keyframes movimiento {
     0% {transform: translateY(0);}
     50% {transform: translateY(-2rem);}
@@ -17,35 +19,7 @@ $colorprincipal: #252525;
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: $colorprincipal;
-}
 
-
-/* Nav*/
-
-.navbar{
-    padding: 1rem;
-}
-
-.navbar-toggler{
-    background-color: whitesmoke;
-}
-
-.navbar-brand{
-    color: whitesmoke;
-}
-
-.navbar-nav{
-    margin: auto;
-}
-
-.nav-link{
-    margin-right: 3rem;
-    color: whitesmoke;
-
-    &:hover{
-        color: gray!important; 
-        transition: 0.4s; 
-    }
 }
 
 /*Inicio*/
@@ -81,6 +55,7 @@ h1{
     margin: 4rem;
 }
 
+
 .container_card{
     display: flex;
     justify-content: center;
@@ -88,8 +63,8 @@ h1{
 }
 
 .card{
-    max-width: 850px;
-    background-color: rgba(240, 240, 241, 0.582);
+    max-width: 1000px;
+    background-color: rgba(240, 240, 241, 0.269);
 }
 
 .img-fluid{
@@ -98,9 +73,12 @@ h1{
 
 .card-body{
     margin: 2rem;
-
+    color: rgba(245, 245, 245, 0.718);
     a{
-        text-decoration: underline solid $colorprincipal;
+        text-decoration: underline solid rgba(245, 245, 245, 0.718);
+    }
+    .text-body-secondary{
+        color: rgba(245, 245, 245, 0.718)!important;
     }
 }
 
@@ -128,6 +106,65 @@ h1{
     }
 }
 
+.conocimientos{
+    display: grid;
+    grid-template-rows: 100% 100%;
+    grid-template-columns: 30% 30%;
+    justify-content: center;
+    margin: 6rem 0rem;
+
+    .skills{
+        text-align: center;
+
+        span{
+            color: whitesmoke;
+        }
+
+        .barra{
+            display: block;
+            margin: auto;
+            width: 80%;
+            height: 10px;
+            border-radius: 20px;
+            background-color: rgb(166, 166, 166);
+            overflow: hidden;
+
+            .progresoh{
+                display: block;
+                width: 60%;
+                height: 100%;
+                border-radius: 20px;
+
+                background-image: linear-gradient(-50deg, rgb(143, 0, 0) 25%, rgb(75, 75, 75) 75%);
+            }
+            .progresoc{
+                display: block;
+                width: 60%;
+                height: 100%;
+                border-radius: 20px;
+
+                background-image: linear-gradient(-50deg, rgb(143, 0, 0) 25%, rgb(75, 75, 75) 75%);
+            }
+            .progresop{
+                display: block;
+                width: 80%;
+                height: 100%;
+                border-radius: 20px;
+
+                background-image: linear-gradient(-50deg, rgb(143, 0, 0) 25%, rgb(75, 75, 75) 75%);
+            }
+            .progresoi{
+                display: block;
+                width: 70%;
+                height: 100%;
+                border-radius: 20px;
+
+                background-image: linear-gradient(-50deg, rgb(143, 0, 0) 25%, rgb(75, 75, 75) 75%);
+            }
+        }
+    }
+}
+
 .galeria_sbrmi{
     display: flex;
     justify-content: center;
@@ -136,7 +173,7 @@ h1{
 
     img{
         flex: 30%;
-        width: 350px;
+        width: 300px;
         border: 0.2rem solid $colorprincipal;
     }
 }
@@ -196,7 +233,7 @@ form{
     align-items: center;
     flex-direction: column;
     background-color: $colorprincipal;
-    padding: 2rem;
+    padding: 1.2rem;
     border-radius: 20px;
     box-shadow: 4px 4px 25px 4px rgba(245, 245, 245, 0.102);
 
@@ -221,23 +258,7 @@ form{
         @include esp_prop(1.5rem, 20px);
         padding: 0.5rem;
     }
-}
-
-.container_datos{
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    span{
-        color: whitesmoke;
-        margin: 1rem;
-        font-size: 20px;
-        text-align: center;
-    }
-}
-
-.boton{
+    .boton{
     padding: 0.5rem 6rem 0.5rem 6rem;
     background-color: $colorprincipal;
     color: whitesmoke;
@@ -250,6 +271,64 @@ form{
         color: rgba(245, 245, 245, 0.622);
     }
 }
+}
+
+.upvent{
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+    width: 50%;
+    height: 30px;
+    background-color: rgba(75, 41, 75, 0.898);
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    margin-top: 4rem;
+    
+    .navegadorr{
+        display: flex;
+        margin: 0.6rem 0.7rem;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+        background-color: red;
+        box-shadow: 1px 1px 20px 1px rgb(252, 69, 69);
+    }
+    .navegadora{
+        @extend .navegadorr;
+        background-color: yellow;
+        box-shadow: 1px 1px 10px 1px yellow;
+    }
+    .navegadorv{
+        @extend .navegadorr;
+        background-color: green;
+        box-shadow: 1px 1px 20px 1px rgb(60, 252, 60);
+    }
+}
+
+.ventana{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_datos{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    border-radius: 0px 0px 20px 20px;
+    padding-bottom:10rem;
+    margin-bottom: 4rem;
+
+    span{
+        color: whitesmoke;
+        margin: 1rem 2rem;
+        font-size: 20px;
+    }
+}
+
+
 
 /*Footer*/
 
@@ -260,5 +339,26 @@ footer{
     p{
         text-align: center;
         font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    h1{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    .upvent{
+        width: 70%;      
+    }
+    
+    .container_datos{
+        width: 70%;
+        padding-bottom:5rem;
+    
+        span{
+            margin: 0.5rem 0.5rem;
+            font-size: 12px;
+        }
     }
 }
