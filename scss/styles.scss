@@ -233,7 +233,7 @@ form{
     align-items: center;
     flex-direction: column;
     background-color: $colorprincipal;
-    padding: 1.2rem;
+    padding: 1.5rem;
     border-radius: 20px;
     box-shadow: 4px 4px 25px 4px rgba(245, 245, 245, 0.102);
 
@@ -253,10 +253,15 @@ form{
         @include esp_prop(auto, 20px);
         max-height: 10rem;
         min-height: 2rem;
+        text-align: center;
+        background-image: linear-gradient(-50deg, rgb(104, 104, 104) 25%, #393939 75%,);
+        color: whitesmoke
     }
     input{
         @include esp_prop(1.5rem, 20px);
         padding: 0.5rem;
+        color: whitesmoke;
+        background-image: linear-gradient(-50deg, rgb(104, 104, 104) 25%, #393939 75%);
     }
     .boton{
     padding: 0.5rem 6rem 0.5rem 6rem;
@@ -264,6 +269,7 @@ form{
     color: whitesmoke;
     border: 2px solid rgba(245, 245, 245, 0.131);
     border-radius: 20px;
+    background-image: none!important;
 
     &:hover{
         transition: 0.4s;
@@ -277,7 +283,7 @@ form{
     display: flex;
     margin: auto;
     justify-content: flex-end;
-    width: 50%;
+    width: 35rem;
     height: 30px;
     background-color: rgba(75, 41, 75, 0.898);
     border-radius: 20px 20px 0px 0px;
@@ -316,7 +322,7 @@ form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
+    width: 35rem;
     border-radius: 0px 0px 20px 20px;
     padding-bottom:10rem;
     margin-bottom: 4rem;
@@ -349,11 +355,11 @@ footer{
         margin: 1rem;
     }
     .upvent{
-        width: 70%;      
+        width: 15.7rem;      
     }
     
     .container_datos{
-        width: 70%;
+        width: 15.7rem;
         padding-bottom:5rem;
     
         span{
