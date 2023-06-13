@@ -54,17 +54,20 @@ header {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #252525;
+  /*Inicio*/
+  /* Sección Sobre Mí*/
+  /*Seccion blog*/
+  /*seccion contacto*/
+  /*Footer*/
 }
-
-/*Inicio*/
-.inicio {
+body .inicio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 2rem;
 }
-.inicio img {
+body .inicio img {
   width: 250px;
   border-radius: 150px;
   background-image: radial-gradient(ellipse 150px 120px, ghostwhite, #252525);
@@ -74,8 +77,7 @@ body {
   animation-duration: 3s;
   animation-delay: 0.2s;
 }
-
-h1 {
+body h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -85,70 +87,63 @@ h1 {
   text-align: center;
   margin: 4rem;
 }
-
-.container_card {
+body .container_card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.card {
+body .card {
   max-width: 1000px;
   background-color: rgba(240, 240, 241, 0.269);
 }
-
-.img-fluid {
+body .img-fluid {
   border-radius: 20px;
 }
-
-.card-body {
+body .card-body {
   margin: 2rem;
   color: rgba(245, 245, 245, 0.718);
 }
-.card-body a {
+body .card-body a {
   text-decoration: underline solid rgba(245, 245, 245, 0.718);
 }
-.card-body .text-body-secondary {
+body .card-body .text-body-secondary {
   color: rgba(245, 245, 245, 0.718) !important;
 }
-
-/* Sección Sobre Mí*/
-.presentacion {
+body .presentacion {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row-reverse;
 }
-.presentacion p {
+body .presentacion p {
   color: ghostwhite;
   width: 550px;
   margin: 2rem;
   text-align: center;
   font-size: 1rem;
 }
-.presentacion img {
+body .presentacion img {
   width: 250px;
   margin: 2rem;
   border-radius: 150px;
   padding: 0.5rem;
   background-image: radial-gradient(ellipse 150px 120px, whitesmoke, #252525);
 }
-
-.conocimientos {
+body .conocimientos {
   display: grid;
   grid-template-rows: 100% 100%;
   grid-template-columns: 30% 30%;
   justify-content: center;
   margin: 6rem 0rem;
 }
-.conocimientos .skills {
+body .conocimientos .skills {
   text-align: center;
 }
-.conocimientos .skills span {
+body .conocimientos .skills span {
   color: whitesmoke;
 }
-.conocimientos .skills .barra {
+body .conocimientos .skills .barra {
   display: block;
   margin: auto;
   width: 80%;
@@ -157,54 +152,51 @@ h1 {
   background-color: rgb(166, 166, 166);
   overflow: hidden;
 }
-.conocimientos .skills .barra .progresoh {
+body .conocimientos .skills .barra .progresoh {
   display: block;
   width: 60%;
   height: 100%;
   border-radius: 20px;
   background-image: linear-gradient(-50deg, rgb(143, 0, 0) 25%, rgb(75, 75, 75) 75%);
 }
-.conocimientos .skills .barra .progresoc {
+body .conocimientos .skills .barra .progresoc {
   display: block;
   width: 60%;
   height: 100%;
   border-radius: 20px;
   background-image: linear-gradient(-50deg, rgb(143, 0, 0) 25%, rgb(75, 75, 75) 75%);
 }
-.conocimientos .skills .barra .progresop {
+body .conocimientos .skills .barra .progresop {
   display: block;
   width: 80%;
   height: 100%;
   border-radius: 20px;
   background-image: linear-gradient(-50deg, rgb(143, 0, 0) 25%, rgb(75, 75, 75) 75%);
 }
-.conocimientos .skills .barra .progresoi {
+body .conocimientos .skills .barra .progresoi {
   display: block;
   width: 70%;
   height: 100%;
   border-radius: 20px;
   background-image: linear-gradient(-50deg, rgb(143, 0, 0) 25%, rgb(75, 75, 75) 75%);
 }
-
-.galeria_sbrmi {
+body .galeria_sbrmi {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 1rem;
 }
-.galeria_sbrmi img {
+body .galeria_sbrmi img {
   flex: 30%;
   width: 300px;
   border: 0.2rem solid #252525;
 }
-
-.vermas {
+body .vermas {
   display: block;
   text-align: center;
   color: whitesmoke;
 }
-
-.proyectos_sbrmi {
+body .proyectos_sbrmi {
   color: whitesmoke;
   font-size: 3rem;
   display: flex;
@@ -213,8 +205,7 @@ h1 {
   align-self: center;
   text-align: center;
 }
-
-.sub_sbrmi {
+body .sub_sbrmi {
   color: whitesmoke;
   display: flex;
   justify-content: center;
@@ -222,31 +213,24 @@ h1 {
   text-align: center;
   margin: 1rem;
 }
-
-/*Seccion blog*/
-.cards {
+body .cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.card {
+body .card {
   margin: 1rem;
 }
-
-.card-img-top {
+body .card-img-top {
   border-radius: 20px;
 }
-
-/*seccion contacto*/
-.contacto {
+body .contacto {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 4rem;
 }
-
-form {
+body form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,17 +240,17 @@ form {
   border-radius: 20px;
   box-shadow: 4px 4px 25px 4px rgba(245, 245, 245, 0.102);
 }
-form p {
+body form p {
   margin: 1.5rem;
   text-align: center;
   color: whitesmoke;
   font-size: 1.2rem;
 }
-form label {
+body form label {
   color: whitesmoke;
   font-size: 1.2rem;
 }
-form textarea {
+body form textarea {
   display: block;
   margin: auto;
   border-radius: 20px;
@@ -276,14 +260,14 @@ form textarea {
   background-image: linear-gradient(-50deg, rgb(104, 104, 104) 25%, #393939 75%);
   color: whitesmoke;
 }
-form input {
+body form input {
   margin: 1.5rem;
   border-radius: 20px;
   padding: 0.5rem;
   color: whitesmoke;
   background-image: linear-gradient(-50deg, rgb(104, 104, 104) 25%, #393939 75%);
 }
-form .boton {
+body form .boton {
   padding: 0.5rem 6rem 0.5rem 6rem;
   background-color: #252525;
   color: whitesmoke;
@@ -291,13 +275,12 @@ form .boton {
   border-radius: 20px;
   background-image: none !important;
 }
-form .boton:hover {
+body form .boton:hover {
   transition: 0.4s;
   background-color: rgba(245, 245, 245, 0.183);
   color: rgba(245, 245, 245, 0.622);
 }
-
-.upvent {
+body .upvent {
   display: flex;
   margin: auto;
   justify-content: flex-end;
@@ -308,7 +291,7 @@ form .boton:hover {
   position: relative;
   margin-top: 4rem;
 }
-.upvent .navegadorr, .upvent .navegadorv, .upvent .navegadora {
+body .upvent .navegadorr, body .upvent .navegadorv, body .upvent .navegadora {
   display: flex;
   margin: 0.6rem 0.7rem;
   width: 10px;
@@ -317,22 +300,20 @@ form .boton:hover {
   background-color: red;
   box-shadow: 1px 1px 20px 1px rgb(252, 69, 69);
 }
-.upvent .navegadora {
+body .upvent .navegadora {
   background-color: yellow;
   box-shadow: 1px 1px 10px 1px yellow;
 }
-.upvent .navegadorv {
+body .upvent .navegadorv {
   background-color: green;
   box-shadow: 1px 1px 20px 1px rgb(60, 252, 60);
 }
-
-.ventana {
+body .ventana {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.container_datos {
+body .container_datos {
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -342,35 +323,33 @@ form .boton:hover {
   padding-bottom: 10rem;
   margin-bottom: 4rem;
 }
-.container_datos span {
+body .container_datos span {
   color: whitesmoke;
   margin: 1rem 2rem;
   font-size: 20px;
 }
-
-/*Footer*/
-footer {
+body footer {
   background-color: rgb(240, 240, 241);
   padding: 2rem;
 }
-footer p {
+body footer p {
   text-align: center;
   font-size: 1.2rem;
 }
 
 @media screen and (max-width: 700px) {
-  h1 {
+  body h1 {
     font-size: 2rem;
     margin: 1rem;
   }
-  .upvent {
+  body .upvent {
     width: 15.7rem;
   }
-  .container_datos {
+  body .container_datos {
     width: 15.7rem;
     padding-bottom: 5rem;
   }
-  .container_datos span {
+  body .container_datos span {
     margin: 0.5rem 0.5rem;
     font-size: 12px;
   }
